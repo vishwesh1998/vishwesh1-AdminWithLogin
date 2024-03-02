@@ -38,12 +38,9 @@ export default function SignUp(){
             <img src="./images/thumbnails/img-17.png"/>
             </div>
         </div>
-            {/* <img src="./images/thumbnails/img-17.png"/> */}
-            {/* <h1>Create an account</h1> */}
             <div className="row innerBox">
             <div className='col-lg-12 logo'>
                     <img src='./images/thumbnails/Logo.svg'/>
-                    {/* <h6>Create an account</h6> */}
                 </div>
             <div className='col-lg-12'>
                 <h6 className='text-center'>Create an account</h6>

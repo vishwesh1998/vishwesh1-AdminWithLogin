@@ -6,17 +6,11 @@
 .signUp{
     width: 100vw;
     height: 100vh;
-    /* box-sizing: content-box; */
-    /* margin: 0; */
-    /* padding: 0; */
-    /* position: relative; */
 }
 
 .img{
     width: 100%;
     height: 100%;
-    /* width: 100vw; */
-    /* height: 20px; */
     }
 
 .innerBox{
@@ -30,11 +24,9 @@
     left: 40%;
     border-radius: 10px;
     padding-bottom: 1rem;
-    /* padding: 2rem; */
 }    
 
 form{
-    /* padding-top: 1rem; */
     padding-left: 1rem;
 }
 
@@ -45,7 +37,6 @@ form{
 
 .innerBox h6{
     font-weight: 200;
-    /* margin-bottom: 2rem; */
 }
 
 form label{
@@ -57,13 +48,9 @@ form input{
     border-radius: 5px;
     border: 1px solid grey;
     font-size: 15px;
-    /* padding-left: 1rem; */
-    /* margin-left: -2rem; */
 }
 
 .button button{
-    /* background: #000; */
-    /* margin-left: 10rem; */
     position: relative;
     left: -13rem;
     background: rgba(8, 8, 241, 0.747);
@@ -72,7 +59,6 @@ form input{
 
 .button b{
     font-size: 12px;
-    /* margin-top: 1rem; */
     color: rgb(104, 104, 247);
     margin-right: 4rem;
 }
@@ -89,7 +75,6 @@ form input{
         height: 50rem;
     }
     .innerBox{
-        /* width: 40rem; */
         height: 30rem;
         margin-left: -7.5rem;
         margin-top: 2rem;
@@ -105,6 +90,5 @@ form input{
 
     .innerBox{
         margin-left: -3.5rem;
-        /* margin-top: 1rem; */
     }
 }   

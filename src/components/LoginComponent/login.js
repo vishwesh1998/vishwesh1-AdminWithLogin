@@ -22,7 +22,6 @@ export default function Login(){
             dispatch(tokenDetails(token))
             navigate('/')
         }
-        // console.log(true)
     }   
 
     return (<div className="container-fliud signUp">
@@ -31,12 +30,9 @@ export default function Login(){
             <img src="/images/thumbnails/img-17.png" alt=''/>
             </div>
         </div>
-            {/* <img src="./images/thumbnails/img-17.png"/> */}
-            {/* <h1>Create an account</h1> */}
             <div className="row innerBox">
             <div className='col-lg-12 logo'>
                     <img src={process.env.PUBLIC_URL + './images/thumbnails/Logo.svg'} alt='logo'/>
-                    {/* <h6>Create an account</h6> */}
                 </div>
             <div className='col-lg-12'>
                 <h6 className='text-center'>Don't have an account yet?<Link to='/signUp' style={{textDecoration:'none', color:'black'}}>Sign Up</Link></h6>

@@ -8,7 +8,6 @@ export default function Product(props){
     const [data, setData] = useState([])
     const dispatch = useDispatch()
     const d = useSelector(state=>state.productList.value)
-    // console.log(data)
 
     return (<div className="container-fliud productMain">
         <div className="container productInner">
@@ -34,10 +33,8 @@ export default function Product(props){
                     .filter(ob => data === "" ? ob : ob.productName.includes(data) || ob.category.includes(data))
                     .map(p=>(p && p.variation[0]?<tr>
                         <td>{p.id}</td>
-                        {/* <td><img src={p.variation?p.variation[0].productImage:''} width={40}/> {p.productName}</td> */}
                         <td>{<img src={p.variation[0].productImage} width={40}/>} {p.productName}</td>
                         <td>{p.category}</td>
-                        {/* <td>${p.variation?p.variation[0].price:""}</td> */}
                         <td>${p.variation[0].price}</td>
                         <td>{p.variation[0].stock}</td>
                         <td>{p.status}</td>

@@ -3,7 +3,6 @@ import {useState} from 'react'
 import {useDispatch} from 'react-redux'
 import { deleteToken } from '../../Redux/tokenSlice'
 import {useNavigate} from 'react-router-dom'
-// import { defaultMethod } from ' react-router-dom/dist/dom'
 
 export default function Header(props){
             const [sideDiv, setSideDiv] = useState(false)

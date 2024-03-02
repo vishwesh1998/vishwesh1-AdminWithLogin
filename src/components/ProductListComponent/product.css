@@ -1,5 +1,4 @@
 .productMain{
-    /* margin-top: 2rem; */
     background: lightgray;
     height: auto;
     padding-bottom: 5rem;
@@ -12,16 +11,9 @@
     top: 4rem;
     border-radius: 15px;
     width: 95%;
-    /* width: auto; */
-    /* margin-left: 2rem; */
-    /* margin-right: 2rem; */
-    /* height: auto; */
-    /* padding-bottom: 5rem; */
-    /* padding-top: 2rem; */
 }
 
 .productInner .row{
-    /* width: 80%; */
     margin-top: 3rem;
 }
 
@@ -31,7 +23,6 @@
 }
 
 .row button{
-    /* background: lightblue; */
     background: lightslategrey;
     color: white;
     border: 1px solid black;
@@ -56,7 +47,6 @@
 
     .productInner button{
         margin-left: 5.5rem;
-        /* margin-bottom: 1rem; */
     }
 }
 
@@ -73,6 +63,5 @@
 
     .productInner button{
         margin-left: 10rem;
-        /* margin-bottom: 1rem; */
     }
 }

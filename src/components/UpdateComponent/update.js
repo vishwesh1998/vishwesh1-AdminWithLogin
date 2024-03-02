@@ -4,7 +4,6 @@ import {useDispatch} from 'react-redux'
 import {useSelector} from 'react-redux'
 import {updateProduct} from '../../Redux/slice'
 import {useEffect} from 'react'
-// console.log(data)
 
 export default function Update(props){
     let newD = props.upObj
@@ -20,7 +19,6 @@ export default function Update(props){
 
     let handleSubmit = (e) =>{
         e.preventDefault()
-        // e.preventDefault()
         let obj = {
             id : newD.id,
             productName : pname, 
@@ -31,11 +29,9 @@ export default function Update(props){
         }
         console.log(obj)
         dispatch(updateProduct(obj))
-        // e.target.reset()
     }
 
     useEffect(()=>{
-        // console.log(newD)
         if(newD && newD.variation){
             setPname(newD.productName)
             setDesc(newD.description)
@@ -45,15 +41,7 @@ export default function Update(props){
             setStock(newD.variation[0].stock)
             setImg(newD.variation[0].productImage)
         }
-        // else{
-        //     setPname('')
-        //     setDesc('')
-        //     setCat('')
-        //     setStatus('')
-        //     setPrice('')
-        //     setStock('')
-            
-        // }
+        
     },[newD])
 
     return (<div className="container-fliud addProduct">
@@ -67,7 +55,6 @@ export default function Update(props){
             </div>
             <div className="col-lg-12 textarea">
                 <label>*Description</label>
-                {/* <input type="text" className="form-control"/> */}
                 <textarea className="form-control" value={desc} onChange={(e)=>setDesc(e.target.value)} required></textarea>
             </div>
             <div className="col-lg-12 input">
@@ -94,10 +81,6 @@ export default function Update(props){
                     <option>In stock</option>
                     <option>Limited stock</option>
                     <option>No stock</option>
-                        {/* <option>Sports</option>
-                        <option>Outdoor</option>
-                        <option>Toys</option>
-                        <option>Hobbies</option> */}
                 </select>
             </div>
             <div className="col-lg-12 button"><button>Save</button></div>
