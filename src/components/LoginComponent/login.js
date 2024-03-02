@@ -29,7 +29,7 @@ export default function Login(){
         <div className="row">
             <div className="col-lg-12 img">
             {/* <img src="./images/thumbnails/img-17.png"/> */}
-            <img src="../../../images/thumbnails/img-17.png"/>
+            <img src="public/images/thumbnails/img-17.png"/>
 
             </div>
         </div>
