@@ -28,14 +28,14 @@ export default function Login(){
     return (<div className="container-fliud signUp">
         <div className="row">
             <div className="col-lg-12 img">
-            <img src="./images/img-17.png" alt='image'/>
+            <img src="/images/thumbnails/img-17.png" alt=''/>
             </div>
         </div>
             {/* <img src="./images/thumbnails/img-17.png"/> */}
             {/* <h1>Create an account</h1> */}
             <div className="row innerBox">
             <div className='col-lg-12 logo'>
-                    <img src='./images/thumbnails/logo.svg'/>
+                    <img src={process.env.PUBLIC_URL + '/images/thumbnails/logo.svg'}/>
                     {/* <h6>Create an account</h6> */}
                 </div>
             <div className='col-lg-12'>
