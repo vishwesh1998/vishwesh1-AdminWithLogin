@@ -35,7 +35,7 @@ export default function Login(){
             {/* <h1>Create an account</h1> */}
             <div className="row innerBox">
             <div className='col-lg-12 logo'>
-                    <img src='./images/thumbnails/logo.svg'/>
+                    <img src={process.env.PUBLIC_URL + './images/thumbnails/logo.svg'} alt='logo'/>
                     {/* <h6>Create an account</h6> */}
                 </div>
             <div className='col-lg-12'>
