@@ -86,7 +86,7 @@
 
     .header{
         width: 100%;
-        margin-bottom: 8.2rem;
+        margin-bottom: 9rem;
     }
 
     .headerIcons .IconImg{
@@ -95,6 +95,7 @@
 
     .headerDetails{
         margin-top: 1rem;
+        /* font-size: 10px; */
     }
 
     .headerDetails span{
