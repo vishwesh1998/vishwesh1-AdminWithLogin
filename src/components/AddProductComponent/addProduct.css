@@ -1,0 +1,59 @@
+.addProduct{
+    /* margin-top: 2rem; */
+    background: lightgray;
+    height: auto;
+    padding-bottom: 5rem;
+    width: 100%;
+    /* margin-left: 20rem; */
+    /* padding-left: 10rem; */
+    /* width: 100vw; */
+}
+
+.addProductInner{
+    background: white;
+    position: relative;
+    top: 3rem;
+    border-radius: 15px;
+    height: 35rem;
+    width: 95%;
+    /* margin-top: 1rem; */
+    /* padding-top: 1rem; */
+    /* height: auto; */
+    /* padding-bottom: 5rem; */
+    /* padding-top: 2rem; */
+}
+
+.addProductInner .row{
+    /* width: 80%; */
+    margin-top: 1rem;
+    margin-right: 1rem;
+    /* padding: 5rem; */
+}
+
+.input input{
+    /* background: #000; */
+    width: 100%;
+    border: 1px solid grey;
+}
+
+.textarea textarea{
+    border: 1px solid grey;
+}
+
+.select select{
+    border: 1px solid grey;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:468px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .addProductInner{
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+}

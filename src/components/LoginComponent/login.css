@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.signUp{
+    width: 100vw;
+    height: 100vh;
+    /* box-sizing: content-box; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* position: relative; */
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    /* width: 100vw; */
+    /* height: 20px; */
+    }
+
+.innerBox{
+    background: white;
+    z-index: 1;
+    width: 20rem;
+    height: auto;
+    border: 1px solid black;
+    position: relative;
+    top: -48rem;
+    left: 40%;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    /* padding: 2rem; */
+}    
+
+form{
+    /* padding-top: 1rem; */
+    padding-left: 1rem;
+}
+
+.logo{
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
+
+.innerBox h6{
+    font-weight: 200;
+    /* margin-bottom: 2rem; */
+}
+
+form label{
+    font-size: 14px;
+}
+
+form input{
+    height: 1.8rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 15px;
+    /* padding-left: 1rem; */
+    /* margin-left: -2rem; */
+}
+
+.button button{
+    /* background: #000; */
+    /* margin-left: 10rem; */
+    position: relative;
+    left: -13rem;
+    background: rgba(8, 8, 241, 0.747);
+    color: white;
+}
+
+.button b{
+    font-size: 12px;
+    /* margin-top: 1rem; */
+    color: rgb(104, 104, 247);
+    margin-right: 4rem;
+}
+
+@media (max-width:468px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .img img{
+        margin: 0;
+        width: 30rem;
+        height: 50rem;
+    }
+    .innerBox{
+        /* width: 40rem; */
+        height: 30rem;
+        margin-left: -7.5rem;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,30 @@
+.footer{
+    height: 3rem;
+    font-weight: 900;
+    margin-top: 2rem;
+    /* p: 1rem; */
+    /* margin: 0 1rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (max-width:468px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer div{
+        font-size: 0.7rem;
+        /* margin-left: 1.5rem; */
+        /* margin-right: 1rem; */
+    }
+
+    .footerDiv2{
+        margin-left: -4.5rem;
+    }
+
+    .footerDiv1{
+        margin-left: 4rem;
+    }
+}

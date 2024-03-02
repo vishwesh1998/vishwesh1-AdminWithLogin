@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 98%;
+    /* margin-right: 0; */
+    /* padding-right: 0; */
+    /* border: 1px solid black; */
+    height: 5rem;
+    /* box-sizing: border-box; */
+}
+
+.headerIcons{
+    margin-top: 1.1rem;
+    padding-left: 2rem;
+    /* margin-left: 1rem; */
+}
+
+.IconImg{
+    margin-left: 4rem;
+    /* font-size: 3rem; */
+    width: 2rem;
+}
+
+.headerInput{
+    display: flex;
+}
+
+.headerInput input{
+    width: 80%;
+    margin-top: 1.2rem;
+    /* margin-right: 1rem; */
+    border-radius: 8px;
+    /* margin-left: 1rem; */
+    /* background: grey(183, 212, 230); */
+    /* background: ; */
+    border: 1px solid grey;
+}
+
+.headerInput img{
+    width: 1.5rem;
+    height: 1.5rem;
+    /* position: relative; */
+    /* left: 20px; */
+    /* color: black; */
+    /* font-weight: 900; */
+    /* image-resolution: 10px; */
+    /* background: white; */
+    margin-top: 1.6rem;
+    margin-left: 2rem;
+    /* padding-left: 5rem; */
+}
+
+.headerDetails{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.headerDetails img{
+    width: 3.3rem;
+    margin-left: 2rem;
+}
+
+.headerDetails b{
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+}
+
+.headerDetails h6{
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.profile{
+    font-size: 14px;
+    /* background: #000; */
+}
+
+@media (max-width:468px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        width: 100%;
+        margin-bottom: 7rem;
+    }
+
+    .headerIcons .IconImg{
+        margin-left: 13rem;
+    }
+
+    .headerDetails{
+        margin-top: 1rem;
+    }
+
+    .headerDetails span{
+        margin-left: -1rem;
+    }
+
+    
+    .headerDetails b{
+        margin-left: 8rem;
+    }
+    
+    .headerDetails h6{
+        margin-left: 1rem;
+    }
+}
