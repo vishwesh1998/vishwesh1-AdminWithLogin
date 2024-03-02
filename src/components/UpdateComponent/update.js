@@ -29,6 +29,7 @@ export default function Update(props){
         }
         console.log(obj)
         dispatch(updateProduct(obj))
+        e.target.reset()
     }
 
     useEffect(()=>{
