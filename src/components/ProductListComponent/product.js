@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import {useEffect, useState} from 'react'
 
 export default function Product(props){
-    // const [data, setData] = useState([])
+    const [data, setData] = useState([])
     const dispatch = useDispatch()
     const d = useSelector(state=>state.productList.value)
     // console.log(data)
@@ -14,7 +14,7 @@ export default function Product(props){
         <div className="container productInner">
         <h1 className="text-center">Product List</h1>
             <div className="row">
-                <div className="col-lg-6"><input type="text" placeholder="Search.." className="form-control"/></div>
+                <div className="col-lg-6"><input type="text" placeholder="Search.." className="form-control" onChange={(e)=>setData(e.target.value)}/></div>
                 <div className="col-lg-6"><button className="form-control"><Link to='/addProduct' style={{textDecoration:'none', color:'white'}}>Add Product</Link></button></div>
             </div>
             <table className="table table-responsive-sm">
@@ -30,7 +30,9 @@ export default function Product(props){
                     </tr>
                 </thead>
                 <tbody className='text-center'>
-                    {d?d.map(p=>(p && p.variation[0]?<tr>
+                    {d?d
+                    .filter(ob => data === "" ? ob : ob.productName.includes(data) || ob.category.includes(data))
+                    .map(p=>(p && p.variation[0]?<tr>
                         <td>{p.id}</td>
                         {/* <td><img src={p.variation?p.variation[0].productImage:''} width={40}/> {p.productName}</td> */}
                         <td>{<img src={p.variation[0].productImage} width={40}/>} {p.productName}</td>
