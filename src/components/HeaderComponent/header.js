@@ -35,7 +35,7 @@ export default function Header(props){
             </div>
             <div className="col-lg-3 headerDetails">
                 <span><img src='./images/thumbnails/profile-img.png'/></span>
-                <h6>Charlie Howard <br/><span className='profile'>Frontend Developer</span></h6>
+                <h6>Charlie Howard</h6>
                 <b onClick={()=>handleLogout()}>Logut</b>
             </div>
         </div>
