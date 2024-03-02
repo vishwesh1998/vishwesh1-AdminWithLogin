@@ -24,7 +24,7 @@ export default function Header(props){
     return (<div className="container-fliud header">
         <div className="row">
             <div className="col-lg-3 headerIcons">
-                <img src="./images/thumbnails/logo.svg"/>
+                <img src="./images/thumbnails/Logo.svg"/>
                 <img src='./images/icons/icon-menu.svg' className='IconImg' onClick={()=>handleSideBar()}/>    
             </div>
             <div className="col-lg-6 headerInput">
