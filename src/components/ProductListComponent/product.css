@@ -59,3 +59,20 @@
         /* margin-bottom: 1rem; */
     }
 }
+
+@media (min-width:469px) and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .productInner input{
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .productInner button{
+        margin-left: 10rem;
+        /* margin-bottom: 1rem; */
+    }
+}

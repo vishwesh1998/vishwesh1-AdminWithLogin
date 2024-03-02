@@ -111,3 +111,38 @@
         margin-left: 1rem;
     }
 }
+
+
+@media (min-width:469px) and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        width: 100%;
+        margin-bottom: 9rem;
+    }
+
+    .headerIcons .IconImg{
+        margin-left: 37rem;
+    }
+
+    .headerDetails{
+        margin-top: 1rem;
+        /* font-size: 10px; */
+    }
+
+    .headerDetails span{
+        margin-left: -1rem;
+    }
+
+    
+    .headerDetails b{
+        margin-left: 32rem;
+    }
+    
+    .headerDetails h6{
+        margin-left: 1rem;
+    }
+}   

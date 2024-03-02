@@ -28,3 +28,24 @@
         margin-left: 4rem;
     }
 }
+
+@media (min-width:469px) and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer div{
+        font-size: 0.7rem;
+        /* margin-left: 1.5rem; */
+        /* margin-right: 1rem; */
+    }
+
+    .footerDiv2{
+        margin-left: -18rem;
+    }
+
+    .footerDiv1{
+        margin-left: 15rem;
+    }
+}

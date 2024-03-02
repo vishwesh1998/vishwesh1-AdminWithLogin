@@ -57,3 +57,15 @@
     }
 
 }
+
+@media (min-width:469px) and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .addProductInner{
+        height: auto;
+        padding-bottom: 1rem;
+    }
+}

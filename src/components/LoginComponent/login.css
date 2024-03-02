@@ -95,3 +95,16 @@ form input{
         margin-top: 2rem;
     }
 }
+
+
+@media (min-width:469px) and (max-width:768px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .innerBox{
+        margin-left: -3.5rem;
+        /* margin-top: 1rem; */
+    }
+}   
