@@ -5,9 +5,6 @@ import {useDispatch} from 'react-redux'
 import { tokenDetails } from '../../Redux/tokenSlice'
 import {useNavigate} from 'react-router-dom'
 import {Link} from 'react-router-dom'
-// import {}
-import { SiFlipkart } from "react-icons/si";
-
 
 export default function Login(){
     const [email, setEmail] = useState('')
@@ -31,8 +28,9 @@ export default function Login(){
     return (<div className="container-fliud signUp">
         <div className="row">
             <div className="col-lg-12 img">
-            <img src="./public/images/thumbnails/img-17.png"/>
-            {/* <span><SiFlipkart/></span> */}
+            {/* <img src="./images/thumbnails/img-17.png"/> */}
+            <img src="../../../images/thumbnails/img-17.png"/>
+
             </div>
         </div>
             {/* <img src="./images/thumbnails/img-17.png"/> */}
@@ -43,7 +41,7 @@ export default function Login(){
                     {/* <h6>Create an account</h6> */}
                 </div>
             <div className='col-lg-12'>
-                <h6 className='text-center'>Don't have an account yet?<Link to='/signUp' style={{textDecoration:'none', color:'black'}}> Sign Up</Link></h6>
+                <h6 className='text-center'>Don't have an account yet?<Link to='/signUp' style={{textDecoration:'none', color:'black'}}>Sign Up</Link></h6>
                 </div>    
             <form className='form' onSubmit={(e)=>handleLogin(e)}>
                 <div className="col-lg-12">
