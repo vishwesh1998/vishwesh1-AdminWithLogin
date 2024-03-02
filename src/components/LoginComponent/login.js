@@ -28,9 +28,7 @@ export default function Login(){
     return (<div className="container-fliud signUp">
         <div className="row">
             <div className="col-lg-12 img">
-            {/* <img src="./images/thumbnails/img-17.png"/> */}
-            <img src="public/images/thumbnails/img-17.png"/>
-
+            <img src="/images/thumbnails/img-17.png" alt='image'/>
             </div>
         </div>
             {/* <img src="./images/thumbnails/img-17.png"/> */}
