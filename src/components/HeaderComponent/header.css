@@ -9,7 +9,7 @@
 }
 
 .headerIcons{
-    margin-top: 1.1rem;
+    /* margin-top: 1.1rem; */
     padding-left: 2rem;
 }
 
@@ -52,12 +52,19 @@
 }
 
 .headerDetails h6{
-    margin-top: 5px;
-    margin-left: 2px;
+    margin-top: 0.8rem;
+    margin-left: 15px;
 }
 
 .profile{
     font-size: 14px;
+}
+
+.hIcon{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    /* margin-top: 50px; */
+    /* padding-top: 1rem; */
 }
 
 @media (max-width:468px){

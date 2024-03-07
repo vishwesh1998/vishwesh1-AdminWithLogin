@@ -4,6 +4,7 @@ import {useDispatch} from 'react-redux'
 import {useSelector} from 'react-redux'
 import {updateProduct} from '../../Redux/slice'
 import {useEffect} from 'react'
+import {useNavigate} from 'react-router-dom'
 
 export default function Update(props){
     let newD = props.upObj
@@ -15,7 +16,9 @@ export default function Update(props){
     const [stock, setStock] = useState('')
     const [status, setStatus] = useState('')
     const [img, setImg] = useState('')
+    const [msg, setMsg] = useState('')
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     let handleSubmit = (e) =>{
         e.preventDefault()
@@ -30,6 +33,11 @@ export default function Update(props){
         console.log(obj)
         dispatch(updateProduct(obj))
         e.target.reset()
+        setMsg('Details Updated Sucessfully !')
+        setTimeout(()=>{
+            navigate('/')
+            setImg('')
+        },2000)
     }
 
     useEffect(()=>{
@@ -84,7 +92,11 @@ export default function Update(props){
                     <option>No stock</option>
                 </select>
             </div>
-            <div className="col-lg-12 button"><button>Save</button></div>
+            {/* {msg?<b className='text-center'>{msg}</b>:''} */}
+            <div className="col-lg-7 button text-center">
+            {msg?<b className='text-center'>{msg}</b>:''}<br/>
+                <button className='btn-sm'>Save</button>
+                </div>
         </div>
             </form>
         </div>

@@ -3,6 +3,7 @@ import {useState} from 'react'
 import {useDispatch} from 'react-redux'
 import { deleteToken } from '../../Redux/tokenSlice'
 import {useNavigate} from 'react-router-dom'
+import { SiFlipkart } from "react-icons/si";
 
 export default function Header(props){
             const [sideDiv, setSideDiv] = useState(false)
@@ -23,7 +24,8 @@ export default function Header(props){
     return (<div className="container-fliud header">
         <div className="row">
             <div className="col-lg-3 headerIcons">
-                <img src="./images/thumbnails/Logo.svg"/>
+                {/* <img src="./images/thumbnails/Logo.svg"/> */}
+                <span className='hIcon'><SiFlipkart/></span>
                 <img src='./images/icons/icon-menu.svg' className='IconImg' onClick={()=>handleSideBar()}/>    
             </div>
             <div className="col-lg-6 headerInput">

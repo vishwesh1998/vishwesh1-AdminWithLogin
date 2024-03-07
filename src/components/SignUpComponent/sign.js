@@ -5,6 +5,7 @@ import {useNavigate} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
 import { signDetails } from '../../Redux/signSlice'
 import {Link} from 'react-router-dom'
+import { SiFlipkart } from "react-icons/si";
 
 export default function SignUp(){
     const [email, setEmail] = useState('')
@@ -40,7 +41,8 @@ export default function SignUp(){
         </div>
             <div className="row innerBox">
             <div className='col-lg-12 logo'>
-                    <img src='./images/thumbnails/Logo.svg'/>
+                    {/* <img src='./images/thumbnails/Logo.svg'/> */}
+                    <span className='icon'><SiFlipkart/></span>
                 </div>
             <div className='col-lg-12'>
                 <h6 className='text-center'>Create an account</h6>

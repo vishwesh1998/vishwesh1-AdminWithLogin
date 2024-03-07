@@ -10,6 +10,7 @@ export default function AddProduct() {
     const [cat, setCat] = useState('')
     const [stock, setStock] = useState('')
     const [status, setStatus] = useState('')
+    const [msg, setMsg] = useState('')
 
     const dispatch = useDispatch()
 
@@ -24,6 +25,10 @@ export default function AddProduct() {
         }
         dispatch(addProduct(obj))
         e.target.reset()
+        setMsg("Product is added sucessfully !")
+        setTimeout(()=>{
+            setMsg('')
+        },2000)
     }
 
     return (<div className="container-fliud addProduct">
@@ -69,7 +74,10 @@ export default function AddProduct() {
                             <option>No stock</option>
                         </select>
                     </div>
-                    <div className="col-lg-12 button"><button>Save</button></div>
+                    <div className="col-lg-7 button text-center">
+            {msg?<b className='text-center'>{msg}</b>:''}
+                        <br/>
+                        <button>Save</button></div>
                 </div>
             </form>
         </div>
